@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap&subset=latin-ext"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac55d2d337.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | Insure landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body id="body">
+    <!-- Top-Bar -->
+    <div class="top-bar" id="top-bar">
+      <!-- /logo -->
+      <img class="logo" id="logo" src="/images/logo.svg" alt="" />
+      <!-- Gamburger-Menu -->
+      <img
+        class="menu-icon"
+        id="menu-icon"
+        src="/images/icon-hamburger.svg"
+        alt=""
+        onclick="toggleMenu()"
+      />
+      <!--  -->
+
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <span class="menu-button">How we work</span>
+        <span class="menu-button">Blog</span>
+        <span class="menu-button">Account</span>
+        <span class="menu-button-border">View plans</span>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <!-- Main-intro img -->
+    <img class="intro-img" src="/images/image-intro-mobile.jpg" alt="" />
+    <img
+      src="/images/bg-pattern-intro-right-desktop.svg"
+      class="desktop-right-pattern"
+      alt=""
+    />
+    <img
+      src="/images/bg-pattern-intro-left-desktop.svg"
+      class="desktop-left-pattern"
+      alt=""
+    />
+    <!-- -->
+
+    <!-- intro-message -->
+    <div class="int-container">
+      <!-- Line Desktop -->
+      <hr class="line-desktop" />
+      <!--  -->
+      <div class="interactive-msg">
+        <div class="title-p">Humanizing your insurance.</div>
+        <div class="p">
+          Get your life insurance coverage easier and faster. We blend our
+          expertise and technology to help you find the plan that’s right for
+          you. Ensure you and your loved ones are protected.
+        </div>
+        <img
+          class="pattern-right"
+          id="pattern-right"
+          src="/images/bg-pattern-intro-right-mobile.svg"
+          alt=""
+        />
+        <a class="more-button">View plans</a>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Features -->
+    <div class="mid-background">
+      <!-- Line -->
+      <div class="header-box">
+        <hr class="we-are-line" />
+        <!--  -->
+        <div class="main-header">
+          We’re different
+        </div>
+      </div>
+      <div class="feature-block-parent">
+        <div class="feature-block left-header feature-padding">
+          <img class="icon-p" src="/images/icon-snappy-process.svg" alt="" />
+          <div class="header">Snappy Process</div>
+          <div class="paragraph">
+            Our application process can be completed in minutes, not hours.
+            Don’t get stuck filling in tedious forms.
+          </div>
+        </div>
+
+        <div class="feature-block feature-padding">
+          <img class="icon-p" src="/images/icon-affordable-prices.svg" alt="" />
+          <div class="header">Affordable Prices</div>
+          <div class="paragraph">
+            We don’t want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.
+          </div>
+        </div>
+
+        <div class="feature-block">
+          <img class="icon-p" src="/images/icon-people-first.svg" alt="" />
+          <div class="header">People First</div>
+          <div class="paragraph">
+            Our plans aren’t full of conditions and clauses to prevent payouts.
+            We make sure you’re covered when you need it.
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="int-container2">
+          <div class="interactive-msg2">Find out more about how we work</div>
+          <a class="more-button2">How we work</a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Footer -->
+    <!-- Social-fab-Icons -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="fab-background">
+          <div class="insure">
+            <img src="/images/logo.svg" alt="" />
+          </div>
+          <div class="fab-icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <hr class="line-footer" />
+        <!--  -->
+        <!-- navigation Footer -->
+        <div class="footer-button-parent">
+          <div class="batch-box">
+            <div class="heading">Our company</div>
+            <div class="footer-button">How we work</div>
+            <div class="footer-button">Why Insure?</div>
+            <div class="footer-button">View plans</div>
+            <div class="footer-button">Reviews</div>
+          </div>
+
+          <div class="batch-box">
+            <div class="heading">Help me</div>
+            <div class="footer-button">FAQ</div>
+            <div class="footer-button">Terms of use</div>
+            <div class="footer-button">Privacy policy</div>
+            <div class="footer-button">Cookies</div>
+          </div>
+
+          <div class="batch-box">
+            <div class="heading">Contact</div>
+            <div class="footer-button">Sales</div>
+            <div class="footer-button">Support</div>
+            <div class="footer-button">Live chat</div>
+          </div>
+
+          <div class="batch-box">
+            <div class="heading">Others</div>
+            <div class="footer-button">Careers</div>
+            <div class="footer-button">Press</div>
+            <div class="footer-button">Licenses</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">David Kostuchenko</a>.
+    </div> -->
+    <script src="/script.js"></script>
+  </body>
+</html>
